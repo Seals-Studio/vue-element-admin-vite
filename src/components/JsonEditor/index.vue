@@ -9,7 +9,7 @@ import CodeMirror from 'codemirror'
 import 'codemirror/addon/lint/lint.css'
 import 'codemirror/lib/codemirror.css'
 import 'codemirror/theme/rubyblue.css'
-require('script-loader!jsonlint')
+// require('script-loader!jsonlint')
 import 'codemirror/mode/javascript/javascript'
 import 'codemirror/addon/lint/lint'
 import 'codemirror/addon/lint/json-lint'
@@ -41,7 +41,7 @@ export default {
     })
 
     this.jsonEditor.setValue(JSON.stringify(this.value, null, 2))
-    this.jsonEditor.on('change', cm => {
+    this.jsonEditor.on('change', (cm) => {
       this.$emit('changed', cm.getValue())
       this.$emit('input', cm.getValue())
     })
@@ -70,7 +70,7 @@ export default {
     }
 
     .cm-s-rubyblue span.cm-string {
-      color: #F08047;
+      color: #f08047;
     }
   }
 }

@@ -3,21 +3,14 @@
     <div class="board-column-header">
       {{ headerText }}
     </div>
-    <draggable
-      :list="list"
-      v-bind="$attrs"
-      class="board-column-content"
-      :set-data="setData"
-    >
-      <div v-for="element in list" :key="element.id" class="board-item">
-        {{ element.name }} {{ element.id }}
-      </div>
+    <draggable :list="list" v-bind="$attrs" class="board-column-content" :set-data="setData">
+      <div v-for="element in list" :key="element.id" class="board-item">{{ element.name }} {{ element.id }}</div>
     </draggable>
   </div>
 </template>
 
 <script>
-import draggable from 'vuedraggable'
+import draggable from 'vuedraggable/src/vuedraggable'
 
 export default {
   name: 'DragKanbanDemo',
@@ -96,4 +89,3 @@ export default {
   }
 }
 </style>
-

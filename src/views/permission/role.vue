@@ -2,7 +2,7 @@
   <div class="app-container">
     <el-button type="primary" @click="handleAddRole">New Role</el-button>
 
-    <el-table :data="rolesList" style="width: 100%;margin-top:30px;" border>
+    <el-table :data="rolesList" style="width: 100%; margin-top: 30px" border>
       <el-table-column align="center" label="Role Key" width="220">
         <template slot-scope="scope">
           {{ scope.row.key }}
@@ -26,7 +26,7 @@
       </el-table-column>
     </el-table>
 
-    <el-dialog :visible.sync="dialogVisible" :title="dialogType==='edit'?'Edit Role':'New Role'">
+    <el-dialog :visible.sync="dialogVisible" :title="dialogType === 'edit' ? 'Edit Role' : 'New Role'">
       <el-form :model="role" label-width="80px" label-position="left">
         <el-form-item label="Name">
           <el-input v-model="role.name" placeholder="Role Name" />
@@ -34,7 +34,7 @@
         <el-form-item label="Desc">
           <el-input
             v-model="role.description"
-            :autosize="{ minRows: 2, maxRows: 4}"
+            :autosize="{ minRows: 2, maxRows: 4 }"
             type="textarea"
             placeholder="Role Description"
           />
@@ -51,8 +51,8 @@
           />
         </el-form-item>
       </el-form>
-      <div style="text-align:right;">
-        <el-button type="danger" @click="dialogVisible=false">Cancel</el-button>
+      <div style="text-align: right">
+        <el-button type="danger" @click="dialogVisible = false">Cancel</el-button>
         <el-button type="primary" @click="confirmRole">Confirm</el-button>
       </div>
     </el-dialog>
@@ -60,7 +60,7 @@
 </template>
 
 <script>
-import path from 'path'
+import path from 'path-browserify'
 import { deepClone } from '@/utils'
 import { getRoutes, getRoles, addRole, deleteRole, updateRole } from '@/api/role'
 
@@ -113,7 +113,9 @@ export default {
 
       for (let route of routes) {
         // skip some route
-        if (route.hidden) { continue }
+        if (route.hidden) {
+          continue
+        }
 
         const onlyOneShowingChild = this.onlyOneShowingChild(route.children, route)
 
@@ -124,7 +126,6 @@ export default {
         const data = {
           path: path.resolve(basePath, route.path),
           title: route.meta && route.meta.title
-
         }
 
         // recursive child routes
@@ -137,7 +138,7 @@ export default {
     },
     generateArr(routes) {
       let data = []
-      routes.forEach(route => {
+      routes.forEach((route) => {
         data.push(route)
         if (route.children) {
           const temp = this.generateArr(route.children)
@@ -174,7 +175,7 @@ export default {
         cancelButtonText: 'Cancel',
         type: 'warning'
       })
-        .then(async() => {
+        .then(async () => {
           await deleteRole(row.key)
           this.rolesList.splice($index, 1)
           this.$message({
@@ -182,7 +183,9 @@ export default {
             message: 'Delete succed!'
           })
         })
-        .catch(err => { console.error(err) })
+        .catch((err) => {
+          console.error(err)
+        })
     },
     generateTree(routes, basePath = '/', checkedKeys) {
       const res = []
@@ -237,7 +240,7 @@ export default {
     // reference: src/view/layout/components/Sidebar/SidebarItem.vue
     onlyOneShowingChild(children = [], parent) {
       let onlyOneChild = null
-      const showingChildren = children.filter(item => !item.hidden)
+      const showingChildren = children.filter((item) => !item.hidden)
 
       // When there is only one child route, the child route is displayed by default
       if (showingChildren.length === 1) {
@@ -248,7 +251,7 @@ export default {
 
       // Show parent if there are no child route to display
       if (showingChildren.length === 0) {
-        onlyOneChild = { ... parent, path: '', noShowingChildren: true }
+        onlyOneChild = { ...parent, path: '', noShowingChildren: true }
         return onlyOneChild
       }
 

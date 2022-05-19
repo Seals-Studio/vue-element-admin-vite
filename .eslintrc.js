@@ -22,6 +22,7 @@ module.exports = {
     'vue/multi-word-component-names': 0,
     'vue/v-slot-style': 0,
     'vue/component-definition-name-casing': 0,
+    'vue/no-mutating-props': 0,
     // 'vue/max-attributes-per-line': [
     //   2,
     //   {
@@ -89,7 +90,8 @@ module.exports = {
         SwitchCase: 1
       }
     ],
-    'jsx-quotes': [2, 'prefer-single'],
+    // 'jsx-quotes': [2, 'prefer-single'],
+    'jsx-quotes': 0,
     'key-spacing': [
       2,
       {
