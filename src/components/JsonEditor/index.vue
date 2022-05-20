@@ -13,6 +13,9 @@ import 'codemirror/theme/rubyblue.css'
 import 'codemirror/mode/javascript/javascript'
 import 'codemirror/addon/lint/lint'
 import 'codemirror/addon/lint/json-lint'
+// 引入jsonlint
+import jsonlint from 'jsonlint-mod'
+window.jsonlint = jsonlint
 
 export default {
   name: 'JsonEditor',
