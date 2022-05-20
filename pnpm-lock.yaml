@@ -23,7 +23,6 @@ specifiers:
   fuse.js: 3.4.4
   husky: 1.3.1
   js-cookie: 2.2.0
-  jsonlint: 1.6.3
   jsonlint-mod: ^1.7.6
   jszip: 3.2.1
   lint-staged: 8.1.5
@@ -70,7 +69,6 @@ dependencies:
   file-saver: registry.npmmirror.com/file-saver/2.0.1
   fuse.js: registry.npmmirror.com/fuse.js/3.4.4
   js-cookie: registry.npmmirror.com/js-cookie/2.2.0
-  jsonlint: registry.npmmirror.com/jsonlint/1.6.3
   jsonlint-mod: registry.npmmirror.com/jsonlint-mod/1.7.6
   jszip: registry.npmmirror.com/jszip/3.2.1
   normalize.css: registry.npmmirror.com/normalize.css/7.0.0
@@ -127,7 +125,7 @@ packages:
     dev: false
 
   github.com/nhn/raphael/78a6ed3ec269f33b6457b0ec66f8c3d1f2ed70e0:
-    resolution: {commit: 78a6ed3ec269f33b6457b0ec66f8c3d1f2ed70e0, repo: git+ssh://git@github.com/nhn/raphael.git, type: git}
+    resolution: {tarball: https://codeload.github.com/nhn/raphael/tar.gz/78a6ed3ec269f33b6457b0ec66f8c3d1f2ed70e0}
     name: raphael
     version: 2.2.0-c
     dependencies:
@@ -135,7 +133,7 @@ packages:
     dev: false
 
   github.com/sohee-lee7/Squire/b1e0e1031fa18912d233c204cbe7c7fae4a42621:
-    resolution: {commit: b1e0e1031fa18912d233c204cbe7c7fae4a42621, repo: git+ssh://git@github.com/sohee-lee7/Squire.git, type: git}
+    resolution: {tarball: https://codeload.github.com/sohee-lee7/Squire/tar.gz/b1e0e1031fa18912d233c204cbe7c7fae4a42621}
     name: squire-rte
     version: 1.9.0
     dev: false
@@ -1275,13 +1273,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  registry.npmmirror.com/ansi-styles/1.0.0:
-    resolution: {integrity: sha512-3iF4FIKdxaVYT3JqQuY3Wat/T2t7TRbbQ94Fu50ZUCbLy4TFbTzr90NOHQodQkNqmeEGCw8WbeP78WNi6SKYUA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ansi-styles/-/ansi-styles-1.0.0.tgz}
-    name: ansi-styles
-    version: 1.0.0
-    engines: {node: '>=0.8.0'}
-    dev: false
-
   registry.npmmirror.com/ansi-styles/2.2.1:
     resolution: {integrity: sha512-kmCevFghRiWM7HB5zTPULl4r9bVFSWjz62MhqizDGUrq2NWuNMQyuv4tHHoKJHs69M/MF64lEcHdYIocrdWQYA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ansi-styles/-/ansi-styles-2.2.1.tgz}
     name: ansi-styles
@@ -1746,17 +1737,6 @@ packages:
     dependencies:
       adler-32: registry.npmmirror.com/adler-32/1.3.1
       crc-32: registry.npmmirror.com/crc-32/1.2.2
-    dev: false
-
-  registry.npmmirror.com/chalk/0.4.0:
-    resolution: {integrity: sha512-sQfYDlfv2DGVtjdoQqxS0cEZDroyG8h6TamA6rvxwlrU5BaSLDx9xhatBYl2pxZ7gmpNaPFVwBtdGdu5rQ+tYQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/chalk/-/chalk-0.4.0.tgz}
-    name: chalk
-    version: 0.4.0
-    engines: {node: '>=0.8.0'}
-    dependencies:
-      ansi-styles: registry.npmmirror.com/ansi-styles/1.0.0
-      has-color: registry.npmmirror.com/has-color/0.1.7
-      strip-ansi: registry.npmmirror.com/strip-ansi/0.1.1
     dev: false
 
   registry.npmmirror.com/chalk/1.1.3:
@@ -4314,13 +4294,6 @@ packages:
     version: 1.0.2
     dev: true
 
-  registry.npmmirror.com/has-color/0.1.7:
-    resolution: {integrity: sha512-kaNz5OTAYYmt646Hkqw50/qyxP2vFnTVu5AQ1Zmk22Kk5+4Qx6BpO8+u7IKsML5fOsFk0ZT0AcCJNYwcvaLBvw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/has-color/-/has-color-0.1.7.tgz}
-    name: has-color
-    version: 0.1.7
-    engines: {node: '>=0.10.0'}
-    dev: false
-
   registry.npmmirror.com/has-flag/1.0.0:
     resolution: {integrity: sha512-DyYHfIYwAJmjAjSSPKANxI8bFY9YtFrgkAfinBojQ8YJTOuOuav64tMUJv584SES4xl74PmuaevIyaLESHdTAA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/has-flag/-/has-flag-1.0.0.tgz}
     name: has-flag
@@ -5256,17 +5229,6 @@ packages:
       underscore: registry.npmmirror.com/underscore/1.13.3
     dev: false
 
-  registry.npmmirror.com/jsonlint/1.6.3:
-    resolution: {integrity: sha512-jMVTMzP+7gU/IyC6hvKyWpUU8tmTkK5b3BPNuMI9U8Sit+YAWLlZwB6Y6YrdCxfg2kNz05p3XY3Bmm4m26Nv3A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jsonlint/-/jsonlint-1.6.3.tgz}
-    name: jsonlint
-    version: 1.6.3
-    engines: {node: '>= 0.6'}
-    hasBin: true
-    dependencies:
-      JSV: registry.npmmirror.com/JSV/4.0.2
-      nomnom: registry.npmmirror.com/nomnom/1.8.1
-    dev: false
-
   registry.npmmirror.com/jszip/3.2.1:
     resolution: {integrity: sha512-iCMBbo4eE5rb1VCpm5qXOAaUiRKRUKiItn8ah2YQQx9qymmSAY98eyQfioChEYcVQLh0zxJ3wS4A0mh90AVPvw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jszip/-/jszip-3.2.1.tgz}
     name: jszip
@@ -5957,16 +5919,6 @@ packages:
     name: node-releases
     version: 2.0.4
     dev: true
-
-  registry.npmmirror.com/nomnom/1.8.1:
-    resolution: {integrity: sha512-5s0JxqhDx9/rksG2BTMVN1enjWSvPidpoSgViZU4ZXULyTe+7jxcCRLB6f42Z0l1xYJpleCBtSyY6Lwg3uu5CQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/nomnom/-/nomnom-1.8.1.tgz}
-    name: nomnom
-    version: 1.8.1
-    deprecated: Package no longer supported. Contact support@npmjs.com for more info.
-    dependencies:
-      chalk: registry.npmmirror.com/chalk/0.4.0
-      underscore: registry.npmmirror.com/underscore/1.6.0
-    dev: false
 
   registry.npmmirror.com/normalize-package-data/2.5.0:
     resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/normalize-package-data/-/normalize-package-data-2.5.0.tgz}
@@ -7622,14 +7574,6 @@ packages:
       is-regexp: registry.npmmirror.com/is-regexp/1.0.0
     dev: true
 
-  registry.npmmirror.com/strip-ansi/0.1.1:
-    resolution: {integrity: sha512-behete+3uqxecWlDAm5lmskaSaISA+ThQ4oNNBDTBJt0x2ppR6IPqfZNuj6BLaLJ/Sji4TPZlcRyOis8wXQTLg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/strip-ansi/-/strip-ansi-0.1.1.tgz}
-    name: strip-ansi
-    version: 0.1.1
-    engines: {node: '>=0.8.0'}
-    hasBin: true
-    dev: false
-
   registry.npmmirror.com/strip-ansi/3.0.1:
     resolution: {integrity: sha512-VhumSSbBqDTP8p2ZLKj40UjBCV4+v8bUSEpUb4KjRgWk9pbqGF4REFj6KEagidb2f/M6AzC0EmFyDNGaw9OCzg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/strip-ansi/-/strip-ansi-3.0.1.tgz}
     name: strip-ansi
@@ -8063,12 +8007,6 @@ packages:
     resolution: {integrity: sha512-QvjkYpiD+dJJraRA8+dGAU4i7aBbb2s0S3jA45TFOvg2VgqvdCDd/3N6CqA8gluk1W91GLoXg5enMUx560QzuA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/underscore/-/underscore-1.13.3.tgz}
     name: underscore
     version: 1.13.3
-    dev: false
-
-  registry.npmmirror.com/underscore/1.6.0:
-    resolution: {integrity: sha512-z4o1fvKUojIWh9XuaVLUDdf86RQiq13AC1dmHbTpoyuu+bquHms76v16CjycCbec87J7z0k//SiQVk0sMdFmpQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/underscore/-/underscore-1.6.0.tgz}
-    name: underscore
-    version: 1.6.0
     dev: false
 
   registry.npmmirror.com/union-value/1.0.1:
