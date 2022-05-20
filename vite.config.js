@@ -81,7 +81,7 @@ export default ({ mode }) => {
           modifyVars: {}
         }
         // scss: {
-        //   additionalData: `@import "${path.resolve(__dirname, 'src/styles/element-variables.scss')}";
+        //   additionalData: `@import "${path.resolve(__dirname, 'src/styles/element-variables.module.scss')}";
         //                   @import "${path.resolve(__dirname, 'src/styles/index.scss')}";`
         // }
       }
