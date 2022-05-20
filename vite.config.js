@@ -80,6 +80,10 @@ export default ({ mode }) => {
           // additionalData: `@import "${path.resolve(__dirname, 'src/assets/style/global.less')}";`,
           modifyVars: {}
         }
+        // scss: {
+        //   additionalData: `@import "${path.resolve(__dirname, 'src/styles/element-variables.scss')}";
+        //                   @import "${path.resolve(__dirname, 'src/styles/index.scss')}";`
+        // }
       }
     },
     build: {
