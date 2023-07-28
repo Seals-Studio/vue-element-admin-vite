@@ -68,6 +68,9 @@ dependencies:
   vue-count-to:
     specifier: 1.0.13
     version: registry.npmmirror.com/vue-count-to@1.0.13
+  vue-i18n:
+    specifier: 7.3.2
+    version: registry.npmmirror.com/vue-i18n@7.3.2(vue@2.6.10)
   vue-router:
     specifier: 3.0.2
     version: registry.npmmirror.com/vue-router@3.0.2(vue@2.6.10)
@@ -175,22 +178,22 @@ devDependencies:
 
 packages:
 
-  github.com/adobe-webplatform/eve/eef80ed:
-    resolution: {tarball: https://codeload.github.com/adobe-webplatform/eve/tar.gz/eef80ed}
+  git@github.com+adobe-webplatform/eve/eef80ed:
+    resolution: {commit: eef80ed, repo: git@github.com:adobe-webplatform/eve.git, type: git}
     name: eve
     version: 0.4.1
     dev: false
 
-  github.com/nhn/raphael/78a6ed3ec269f33b6457b0ec66f8c3d1f2ed70e0:
-    resolution: {tarball: https://codeload.github.com/nhn/raphael/tar.gz/78a6ed3ec269f33b6457b0ec66f8c3d1f2ed70e0}
+  git@github.com+nhn/raphael/78a6ed3ec269f33b6457b0ec66f8c3d1f2ed70e0:
+    resolution: {commit: 78a6ed3ec269f33b6457b0ec66f8c3d1f2ed70e0, repo: git@github.com:nhn/raphael.git, type: git}
     name: raphael
     version: 2.2.0-c
     dependencies:
-      eve: github.com/adobe-webplatform/eve/eef80ed
+      eve: git@github.com+adobe-webplatform/eve/eef80ed
     dev: false
 
-  github.com/sohee-lee7/Squire/b1e0e1031fa18912d233c204cbe7c7fae4a42621:
-    resolution: {tarball: https://codeload.github.com/sohee-lee7/Squire/tar.gz/b1e0e1031fa18912d233c204cbe7c7fae4a42621}
+  git@github.com+sohee-lee7/Squire/b1e0e1031fa18912d233c204cbe7c7fae4a42621:
+    resolution: {commit: b1e0e1031fa18912d233c204cbe7c7fae4a42621, repo: git@github.com:sohee-lee7/Squire.git, type: git}
     name: squire-rte
     version: 1.9.0
     dev: false
@@ -7967,7 +7970,7 @@ packages:
     version: 3.11.3
     dependencies:
       core-js: registry.npmmirror.com/core-js@3.6.5
-      raphael: github.com/nhn/raphael/78a6ed3ec269f33b6457b0ec66f8c3d1f2ed70e0
+      raphael: git@github.com+nhn/raphael/78a6ed3ec269f33b6457b0ec66f8c3d1f2ed70e0
       tui-code-snippet: registry.npmmirror.com/tui-code-snippet@2.3.3
     dev: false
 
@@ -8003,7 +8006,7 @@ packages:
       markdown-it: registry.npmmirror.com/markdown-it@8.4.2
       plantuml-encoder: registry.npmmirror.com/plantuml-encoder@1.4.0
       resize-observer-polyfill: registry.npmmirror.com/resize-observer-polyfill@1.5.1
-      squire-rte: github.com/sohee-lee7/Squire/b1e0e1031fa18912d233c204cbe7c7fae4a42621
+      squire-rte: git@github.com+sohee-lee7/Squire/b1e0e1031fa18912d233c204cbe7c7fae4a42621
       to-mark: registry.npmmirror.com/to-mark@1.1.9
       tui-chart: registry.npmmirror.com/tui-chart@3.11.3
       tui-code-snippet: registry.npmmirror.com/tui-code-snippet@1.5.2
@@ -8458,6 +8461,17 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  registry.npmmirror.com/vue-i18n@7.3.2(vue@2.6.10):
+    resolution: {integrity: sha512-4NBhqrH4Pe1etecC2aafXEKH9gJY+TaO4EHYZ0EBYPwFakUp4FyDHHf+r2N1keSX60iEm1k25WcVMD+OxAH/yw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-i18n/-/vue-i18n-7.3.2.tgz}
+    id: registry.npmmirror.com/vue-i18n/7.3.2
+    name: vue-i18n
+    version: 7.3.2
+    peerDependencies:
+      vue: ^2
+    dependencies:
+      vue: registry.npmmirror.com/vue@2.6.10
+    dev: false
 
   registry.npmmirror.com/vue-router@3.0.2(vue@2.6.10):
     resolution: {integrity: sha512-opKtsxjp9eOcFWdp6xLQPLmRGgfM932Tl56U9chYTnoWqKxQ8M20N7AkdEbM5beUh6wICoFGYugAX9vQjyJLFg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-router/-/vue-router-3.0.2.tgz}
