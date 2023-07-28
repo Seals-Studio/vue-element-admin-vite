@@ -75,7 +75,7 @@ export default ({ mode }) => {
         {
           find: /@\/.+/,
           replacement: (val) => {
-            return val.replace(/^@/, path.resolve(__dirname, './src/'))
+            return val.replace(/^@/, path.resolve(__dirname, '/src/'))
           }
         },
         {
